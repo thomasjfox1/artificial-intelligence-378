@@ -1,0 +1,74 @@
+Test cases generated using power function. 
+
+------
+Please enter an a base: 1
+Please enter an exponent: 1
+The number 1 raised to the 1 power is: 1
+------
+Please enter an a base: 0
+Please enter an exponent: 0
+The number 0 raised to the 0 power is: 1
+------
+Please enter an a base: 0
+Please enter an exponent: 10
+The number 0 raised to the 10 power is: 0
+------
+Please enter an a base: 1
+Please enter an exponent: 15
+The number 1 raised to the 15 power is: 1
+------
+Please enter an a base: 2
+Please enter an exponent: 6
+The number 2 raised to the 6 power is: 64
+------
+Please enter an a base: 2
+Please enter an exponent: 15
+The number 2 raised to the 15 power is: 32768
+------
+Please enter an a base: 3
+Please enter an exponent: 3
+The number 3 raised to the 3 power is: 27
+------
+Please enter an a base: 3
+Please enter an exponent: 4
+The number 3 raised to the 4 power is: 81
+------
+Please enter an a base: 3
+Please enter an exponent: 0
+The number 3 raised to the 0 power is: 1
+------
+Please enter an a base: 15
+Please enter an exponent: 7
+The number 15 raised to the 7 power is: 1.70859e+08
+------
+Please enter an a base: 4
+Please enter an exponent: -4
+The number 4 raised to the -4 power is: 0.00390625
+------
+Please enter an a base: 2
+Please enter an exponent: -2
+The number 2 raised to the -2 power is: 0.25
+------
+Please enter an a base: 6
+Please enter an exponent: -20
+The number 6 raised to the -20 power is: 2.73511e-16
+------
+Please enter an a base: 1
+Please enter an exponent: -2
+The number 1 raised to the -2 power is: 1
+------
+Please enter an a base: 0.5
+Please enter an exponent: 4
+The number 0.5 raised to the 4 power is: 0.0625
+------
+Please enter an a base: 0.7
+Please enter an exponent: 8
+The number 0.7 raised to the 8 power is: 0.057648
+------
+Please enter an a base: 8.3
+Please enter an exponent: 5
+The number 8.3 raised to the 5 power is: 39390.4
+------
+Please enter an a base: 3.5
+Please enter an exponent: -4
+The number 3.5 raised to the -4 power is: 0.00666389
