@@ -1,3 +1,6 @@
+;Thomas J. Fox
+;16 March 2015
+
 ;creating a defstruct to hold restaurant data
 (defstruct restaurant
   :name
