@@ -12,5 +12,126 @@
   :inaccurateAll    ;Results are incorrect for all cases.
   :incomplete       ;Results are incomplete.
   :dataDestroyed    ;A data item is being changed or destroyed with no obvious cause.
-                    ;. . any other reasonably common problems you think of . .
+  )
+
+
+(defstruct endlessLoop
+  :terminationTime
+  :iContinuation
+  :conditionalsCheck
+  )
+
+(defstruct derivedClass
+  :compareClasses
+  :checkClassExists
+  :checkInheritance
+  )
+
+
+(defstruct noOutput
+  :expectedOut
+  :resultOut
+  :checkReturn
+  )
+
+
+(defstruct loopShort
+  :conditionalsCheck
+  :checkReturn
+  :syntax
+  )
+
+
+(defstruct loopLong
+  :conditionalsCheck
+  :checkReturn
+  :syntax
+  )
+
+
+(defstruct illegalOp
+  :flags
+  :syntax
+  )
+
+
+(defstruct inaccurateSome
+  :syntax
+  :checkDataLoad
+  :conditionalsCheck
+  )
+
+
+(defstruct inaccurateAll
+  :syntax
+  :checkDataLoad
+  :conditionalsCheck
+  )
+
+(defstruct incomplete
+  :syntax
+  :leaks
+  :checkReturn
+  )
+
+(defstruct dataDestroyed
+  :flags
+  :syntax
+  :leaks
+  )
+
+
+;test rule base
+(deftest endlessLoop
+  (is (= loopI (i)))
+  )
+
+(deftest derivedClass
+  (is (= baseClass (derivedClass)))
+  )
+
+(deftest noOutput
+  (is (= nil (output)))
+  )
+
+(deftest loopShort
+  (is (< loopI (i)))
+  )
+
+(deftest loopLong
+  (is (> loopI (i)))
+  )
+
+(deftest illegalOp
+  (is (= legalOp (operation)))
+  )
+
+(deftest inaccurateSome
+  (is (< total (inaccuracies)))
+  )
+
+(deftest inaccurateAll
+  (is (= total (inaccuracies)))
+  )
+
+(deftest incomplete
+  (is (= completeResult (result))
+  )
+
+(deftest dataDestroyed
+  (is (= data (testData)))
+  )
+
+;macro to execute all of the tests
+(deftest potentialErrors
+  (endlessLoop)
+  (derivedClass)
+  (noOutput)
+  (loopShort)
+  (loopLong)
+  (illegalOp)
+  (inaccurateSome)
+  (inaccurateAll)
+  (incomplete)
+  (dataDestroyed)
   )
