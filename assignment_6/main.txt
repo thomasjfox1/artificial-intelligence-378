@@ -20,3 +20,15 @@ legal([Man,Wolf,Goat,Cabbage]) :- equals(Man,Goat,Wolf), equals(Man,Goat,Cabbage
 wolfGoatCabbage([east,east,east,east],[]).
 
 wolfGoatCabbage(Config,[FirstMove|OtherMoves]) :- transport(Config,FirstMove,NextConfig), legal(NextConfig), wolfGoatCabbage(NextConfig,OtherMoves).
+
+
+/*---------------QUERY--------------*/
+
+?- length(X,7), setof(t,wolfGoatCabbage([west,west,west,west],X),_).
+
+/*
+* The above query returns the following executed on main.pl:
+*
+* X = [goat, nothing, cabbage, goat, wolf, nothing, goat]
+* X = [goat, nothing, wolf, goat, cabbage, nothing, goat]
+*/
